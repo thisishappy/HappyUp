@@ -27,9 +27,12 @@ describe "LayoutLinks" do
   end
   
   it "should have a page for new talent to apply at '/apply'" do
-    get /apply
+    get '/apply'
     response.should have_selector('title', :content => "artists")
   end
   
-  
+  it "should have a page to sign up on" do
+    get '/signup'
+    response.should have_selector('title', :content => "Sign Up")
+  end
 end

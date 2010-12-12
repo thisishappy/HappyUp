@@ -1,4 +1,6 @@
 Happystart::Application.routes.draw do
+  get "users/new"
+
   match '/', :to => 'pages#home'
   match '/music', :to => 'pages#music'
   match '/events', :to => 'pages#events'
@@ -6,6 +8,9 @@ Happystart::Application.routes.draw do
   match '/team', :to => 'pages#team'
   match '/blog', :to => 'pages#blog'
   match '/contact', :to => 'pages#contact'
+  
+  #User-management routes
+  match '/signup', :to => 'users#new'
   
   root :to => 'pages#home'
   

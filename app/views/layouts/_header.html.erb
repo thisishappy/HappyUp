@@ -1,6 +1,7 @@
 
 <header>
-  <%= image_tag("happy_music_logo.png", :alt => "Happy Music Logo", :class => "round") %>
+  <% logo = image_tag("happy_music_logo.png", :alt => "Happy Music Logo", :class => "round") %>
+  <%= link_to logo, root_path %>
     <nav class="intranav round">
       <ul>
         <li><%= link_to "Home", '#' %></li>
