@@ -5,12 +5,34 @@ class PagesController < ApplicationController
     @title = "Home"
   end
   
+  def music
+    @music = "Music"
+  end
+  
+  def events
+    @events = "Events"
+  end
+  
+  def blog
+    @blog = "Blog"
+  end
+  
+  def team
+    @title = "Team"
+  end
+  
   def contact
     @title = "Contact" 
   end
   
-  def about
-    @title = "About"
+  def artists
+    @artists = "Artists"
   end
+  
+  def apply
+    @apply = "Apply"
+  end
+  
+  
   
 end
