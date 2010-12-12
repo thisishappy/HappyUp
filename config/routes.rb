@@ -1,9 +1,16 @@
 Happystart::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/contact"
+  match '/', :to => 'pages#home'
+  match '/music', :to => 'pages#music'
+  match '/events', :to => 'pages#events'
   
-  get "pages/about"
+  match '/team', :to => 'pages#team'
+  match '/blog', :to => 'pages#blog'
+  match '/contact', :to => 'pages#contact'
+  
+  root :to => 'pages#home'
+  
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

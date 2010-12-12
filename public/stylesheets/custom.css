@@ -5,6 +5,11 @@ header img {padding: 1em;background: #fff;}
 section {margin-top: 1em;font-size: 120%;padding: 20px;background: #fff;}
 section h1 {font-size: 200%;}
 
+/* Floats */
+.left {float: left;}
+.right {float: right;}
+.center{margin: 0 auto;}
+
 /* Links */
 a {color: #09c;text-decoration: none;}
 a:hover {color: #069;text-decoration: underline;}
