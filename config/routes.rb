@@ -1,5 +1,6 @@
 Happystart::Application.routes.draw do
-  get "users/new"
+  resources :users
+  match '/signup', :to => 'users#new'
 
   match '/', :to => 'pages#home'
   match '/music', :to => 'pages#music'
